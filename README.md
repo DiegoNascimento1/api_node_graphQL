@@ -32,12 +32,12 @@ Aqui estão algumas consultas que você pode fazer:
 
 ```graphql
 query {
-todasTarefas {
- id
- titulo
- descricao
- concluida
-}
+  todasTarefas {
+  id
+  titulo
+  descricao
+  concluida
+  }
 }
 ```
 
@@ -90,6 +90,17 @@ query {
 
 ## Mutations GraphQL
 Aqui estão algumas mutações que você pode fazer:
+
+- **Criar um novo usuario:**
+```graphql
+mutation {
+  criarUsuario(nome: "User", email: "user@user.com") {
+        id
+        nome
+        email
+    }
+}
+```
 
 - **Criar uma nova tarefa:**
 ```graphql
